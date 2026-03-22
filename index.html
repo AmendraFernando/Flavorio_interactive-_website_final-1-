@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLAVORIO - Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="bi bi-journal-richtext text-warning me-1"></i> FLAVORIO
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link active fw-semibold" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="add-recipe.html">+ Add Recipe</a></li>
+        <li class="nav-item"><a class="nav-link" href="my-recipes.html">My Recipes</a></li>
+        <li class="nav-item"><a class="btn btn-dark btn-sm px-3" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main -->
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero-banner">
+    <h4>Welcome to our recipe book.</h4>
+    <p class="mb-0 text-muted">Discover delicious recipes, save your favorites, and add your own culinary creations.</p>
+  </div>
+
+  <!-- Search & Filter -->
+  <div class="row mb-4 g-2">
+    <div class="col-md-8">
+      <div class="input-group">
+        <span class="input-group-text bg-white border-end-0">
+          <i class="bi bi-search text-muted"></i>
+        </span>
+        <input type="text" class="form-control border-start-0" placeholder="Search recipes..."/>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <select class="form-select">
+        <option>All Levels</option>
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Recipe Cards -->
+  <div class="row g-4">
+
+    <!-- Card 1 - Sri Lankan Pol Sambol -->
+    <div class="col-md-4">
+      <div class="card recipe-card">
+        <img src="C:\Users\Amendra\Downloads\download (1).jpg"
+             class="card-img-top" alt="Sri Lankan Pol Sambol" style="height:200px; object-fit:cover; border-radius:12px 12px 0 0;"/>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <small class="text-muted">Sri Lankan</small>
+            <span class="badge bg-success">Easy</span>
+          </div>
+          <h6 class="card-title fw-bold">Sri Lankan Pol Sambol</h6>
+          <p class="card-text text-muted small">A classic coconut relish with chili and onion — perfect with rice or bread.</p>
+        </div>
+        <div class="card-footer bg-white border-0 meta-row d-flex gap-3 pb-3">
+          <span><i class="bi bi-clock"></i> 10 min</span>
+          <span><i class="bi bi-fire"></i> 0 min</span>
+          <span><i class="bi bi-people"></i> 4</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 - Chicken Curry -->
+    <div class="col-md-4">
+      <div class="card recipe-card">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80"
+             class="card-img-top" alt="Chicken Curry" style="height:200px; object-fit:cover; border-radius:12px 12px 0 0;"/>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <small class="text-muted">Curry</small>
+            <span class="badge bg-warning text-dark">Medium</span>
+          </div>
+          <h6 class="card-title fw-bold">Chicken Curry</h6>
+          <p class="card-text text-muted small">Aromatic spiced chicken curry slow-cooked to perfection with coconut milk.</p>
+        </div>
+        <div class="card-footer bg-white border-0 meta-row d-flex gap-3 pb-3">
+          <span><i class="bi bi-clock"></i> 20 min</span>
+          <span><i class="bi bi-fire"></i> 40 min</span>
+          <span><i class="bi bi-people"></i> 6</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 - Chocolate Cake -->
+    <div class="col-md-4">
+      <div class="card recipe-card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80"
+             class="card-img-top" alt="Chocolate Cake" style="height:200px; object-fit:cover; border-radius:12px 12px 0 0;"/>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <small class="text-muted">Dessert</small>
+            <span class="badge bg-danger">Hard</span>
+          </div>
+          <h6 class="card-title fw-bold">Layered Chocolate Cake</h6>
+          <p class="card-text text-muted small">A rich, moist three-layer chocolate cake with ganache frosting.</p>
+        </div>
+        <div class="card-footer bg-white border-0 meta-row d-flex gap-3 pb-3">
+          <span><i class="bi bi-clock"></i> 30 min</span>
+          <span><i class="bi bi-fire"></i> 45 min</span>
+          <span><i class="bi bi-people"></i> 8</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 - Banana Smoothie -->
+    <div class="col-md-4">
+      <div class="card recipe-card">
+        <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=600&q=80"
+             class="card-img-top" alt="Banana Smoothie" style="height:200px; object-fit:cover; border-radius:12px 12px 0 0;"/>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <small class="text-muted">Beverage</small>
+            <span class="badge bg-success">Easy</span>
+          </div>
+          <h6 class="card-title fw-bold">Banana Smoothie</h6>
+          <p class="card-text text-muted small">Quick and nutritious banana smoothie ready in under 5 minutes.</p>
+        </div>
+        <div class="card-footer bg-white border-0 meta-row d-flex gap-3 pb-3">
+          <span><i class="bi bi-clock"></i> 5 min</span>
+          <span><i class="bi bi-fire"></i> 0 min</span>
+          <span><i class="bi bi-people"></i> 2</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 - Pasta Carbonara -->
+    <div class="col-md-4">
+      <div class="card recipe-card">
+        <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80"
+             class="card-img-top" alt="Pasta Carbonara" style="height:200px; object-fit:cover; border-radius:12px 12px 0 0;"/>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <small class="text-muted">Italian</small>
+            <span class="badge bg-warning text-dark">Medium</span>
+          </div>
+          <h6 class="card-title fw-bold">Pasta Carbonara</h6>
+          <p class="card-text text-muted small">Classic Italian pasta with eggs, cheese, pancetta, and black pepper.</p>
+        </div>
+        <div class="card-footer bg-white border-0 meta-row d-flex gap-3 pb-3">
+          <span><i class="bi bi-clock"></i> 10 min</span>
+          <span><i class="bi bi-fire"></i> 20 min</span>
+          <span><i class="bi bi-people"></i> 4</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 - Garden Salad -->
+    <div class="col-md-4">
+      <div class="card recipe-card">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80"
+             class="card-img-top" alt="Garden Salad" style="height:200px; object-fit:cover; border-radius:12px 12px 0 0;"/>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <small class="text-muted">Salad</small>
+            <span class="badge bg-success">Easy</span>
+          </div>
+          <h6 class="card-title fw-bold">Garden Salad</h6>
+          <p class="card-text text-muted small">Fresh mix of greens, tomatoes, and cucumbers with a light vinaigrette.</p>
+        </div>
+        <div class="card-footer bg-white border-0 meta-row d-flex gap-3 pb-3">
+          <span><i class="bi bi-clock"></i> 10 min</span>
+          <span><i class="bi bi-fire"></i> 0 min</span>
+          <span><i class="bi bi-people"></i> 3</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center">
+    <p class="mb-1"><i class="bi bi-journal-richtext text-warning me-1"></i> <strong class="text-white">FLAVORIO</strong></p>
+    <p class="mb-0 small">© 2026 FLAVORIO. Digital Recipe Book — Rajarata University of Sri Lanka</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
